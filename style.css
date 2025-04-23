@@ -10,13 +10,16 @@
 
 #navbar {
     height: 70px;
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid #ccc;
     position: sticky;
+    top: 0;
+    z-index: 1000; /* Important to keep it above other elements */
+    background-color: white;
 }
 
 .left {
@@ -192,7 +195,7 @@
   .top-bar h2 {
     color: #1e3932;
     font-size: 24px;
-    margin: 0;
+    margin-left: 62px;
   }
   
   .menu-link {
@@ -206,7 +209,7 @@
     color: #00754a;
     text-decoration: none;
     font-weight: 600;
-    margin-left: 180px;
+    margin-right: 70px;
   }
   
   /* .menu-link img {
@@ -236,6 +239,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     max-width: 350px;
     margin-top: 20px;
+    margin-left: 70px;
     padding: 20px;
     align-items: center;
   }
@@ -294,6 +298,124 @@
     height: 14px;
     margin-top: 2px;
   }
+
+  .lastdiv {
+    background-color: #EDEBE9;
+    height: 500px;
+    width: 100%;
+  }
+
+  .lastflex {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-left: 80px;
+    margin-right: 25px;
+  }
+  .lastflex a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #00754a;
+    font-weight: 700;
+  }
+  .bg-img {
+    margin: auto;
+    position: relative;  
+    width: 82vw;                        /* Half of the screen width */
+    height: 50vh;
+    background-image: url(https://preprodtsbstorage.blob.core.windows.net/cms/uploads/ICW_Live_Event_Day5_41f11ca3d2.jpg);
+    background-size: cover;             
+    background-position: center;      
+    background-repeat: no-repeat;
+    display: flex;                      
+    justify-content: center;           
+    align-items: center;               
+    color: white;   
+    border: 1px solid ;
+    border-radius: 10px;   
+    transition: filter 0.5s ease;
+
+  }
+  .bg-img:hover {
+    filter: brightness(65%);         /* 70% brightness = darker */
+  }
+  .Cofee{
+    /* width: 100px; */
+    margin: 0.9px;
+    padding: 0.9px;
+    /* height: 5px; */
+    /* width: fit-; */
+    border: 1px solid #E6EDEB ;
+    border-radius: 2px;  
+    background-color: #E6EDEB;
+    color:#00754a ;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  #cofee-1{
+    position: absolute;         /* Now position inside parent */
+  top: 20px;                  /* Distance from top */
+  left: 20px;
+    
+  }
+#final{
+  position: absolute;         /* Now position inside parent */
+  bottom: 20px;                  /* Distance from top */
+  left: 20px;
+}
+.cofee-2{
+  width:auto;
+  height: 30px;
+  /* margin: 20px; */
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid #E6EDEB ;
+    border-radius: 15px;  
+    background-color: #E6EDEB;
+    font-size: 12px;
+    font-weight: 550;
+    cursor: pointer;
+
+}
+
+#footer {
+  margin-top: 100px;
+  height: 800px;
+  width: 100%;
+  background-color: #0E382C;
+}
   
+#last-main{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0;
+  padding-top: 100px;
+  padding-left: 100px;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+#last-main div a {
+  display: flex;
+  flex-direction: column;
+  line-height: 45px;
+   font-weight: 400;
+    font-size: .955em;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+    /* text-decoration: none; */
+}
+
   
+
+#last-main div h3 {
+  color: white;
+  /* font-weight: bolder; */
+  font-size: 1.125em;
+  color: #fff;
+  font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+  cursor: pointer;
+}
 
